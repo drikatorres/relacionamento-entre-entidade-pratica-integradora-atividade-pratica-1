@@ -12,9 +12,13 @@ public class Instrutor {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id")
     private int id;
+    @Column(name = "rg")
     private int rg;
+    @Column(name = "nome")
     private String nome;
+    @Column(name = "nascimento")
     private Date nascimento;
+    @Column(name = "titulacao")
     private int titulacao;
 
     @OneToMany(mappedBy = "instrutor")

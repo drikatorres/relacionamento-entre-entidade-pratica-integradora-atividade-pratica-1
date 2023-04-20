@@ -12,12 +12,17 @@ public class Turma {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id")
     private int id;
+    @Column(name = "horario")
     private Time horario;
+    @Column(name = "duracao")
     private int duracao;
+    @Column(name = "data inicio")
     private Date dataInicio;
+    @Column(name = "data fim")
     private Date dataFim;
     @ManyToOne
     @JoinColumn(name = "id_instrutor", referencedColumnName = "id")
+    @Column(name = "instrutor")
     private Instrutor instrutor;
 
     public Turma() {
