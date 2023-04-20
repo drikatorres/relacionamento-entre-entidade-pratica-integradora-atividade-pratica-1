@@ -11,7 +11,7 @@ public class Instrutor {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id")
-    private int id;
+    private Integer id;
     @Column(name = "rg")
     private int rg;
     @Column(name = "nome")

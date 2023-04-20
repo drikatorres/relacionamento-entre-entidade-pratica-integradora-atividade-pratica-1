@@ -11,7 +11,7 @@ public class Turma {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id")
-    private int id;
+    private Integer id;
     @Column(name = "horario")
     private Time horario;
     @Column(name = "duracao")
